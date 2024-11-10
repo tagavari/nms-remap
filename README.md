@@ -32,7 +32,7 @@ Then, add the plugin to your project:
 
 ```kotlin
 plugins {
-    id("me.tagavari.nmsremap") version "1.0.0"
+    id("me.tagavari.nmsremap") version "1.0.1"
 }
 ```
 
@@ -40,7 +40,7 @@ plugins {
 
 ```groovy
 plugins {
-    id "me.tagavari.nmsremap" version "1.0.0"
+    id "me.tagavari.nmsremap" version "1.0.1"
 }
 ```
 
