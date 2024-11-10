@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
 	//SpecialSource
-	implementation("net.md-5:SpecialSource:1.11.0")
+	implementation("net.md-5:SpecialSource:1.11.4")
 }
 
 gradlePlugin {
