@@ -1,11 +1,11 @@
 plugins {
-	kotlin("jvm") version "1.6.21"
+	kotlin("jvm") version "2.0.21"
 	id("java-gradle-plugin")
-	id("com.gradle.plugin-publish") version "1.0.0-rc-2"
+	id("com.gradle.plugin-publish") version "1.3.0"
 	id("maven-publish")
 }
 
-version = "1.0.0"
+version = "1.0.1"
 group = "me.tagavari"
 
 repositories {
@@ -18,19 +18,16 @@ dependencies {
 }
 
 gradlePlugin {
+	website = "https://github.com/tagavari/nms-remap"
+	vcsUrl = "https://github.com/tagavari/nms-remap"
+	
 	plugins {
 		create("nmsRemap") {
 			id = "me.tagavari.nmsremap"
 			implementationClass = "me.tagavari.nmsremap.NMSRemapPlugin"
 			displayName = "NMS remap plugin"
+			description = "Use SpecialSource to remap Spigot plugin outputs"
+			tags = listOf("minecraft", "specialsource", "nms", "spigot", "mojang")
 		}
 	}
-}
-
-pluginBundle {
-	website = "https://github.com/tagavari/nms-remap"
-	vcsUrl = "https://github.com/tagavari/nms-remap"
-	
-	description = "Use SpecialSource to remap Spigot plugin outputs"
-	tags = listOf("minecraft", "specialsource", "nms", "spigot", "mojang")
 }
